@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Bai+Jamjuree&family=Labrada&family=PT+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', cursive;
+}
+:root{
+    --container-bg:#de9a4c;
+    --h1-font-size:30px;
+    --form-bg:#efe1b3;
+    --primary-font:20px;
+    --btn-bg:#c62452;
+    --text-color:white;
+}
+.container{
+    height: 20rem;
+    width: 30%;
+    position: relative;
+    left: 35%;
+    top: 10rem;
+
+    background-color: var(--container-bg);
+}
+#form{
+    height: 18rem;
+    width: 95%;
+    margin-left: 2.5%;
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    background-color:var(--form-bg);
+}
+form h1{
+    text-align: center;
+}
+label{
+    font-size: var(--primary-font);
+    line-height: 3;
+    
+}
+
+.click{
+    border: none;
+    padding: 5px 40px;
+    font-size: larger;
+    margin-top: 20px;
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+}
+.inputgroup input{
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(234, 195, 5);
+}
+.inputgroup input:focus{
+    outline: 0;
+}
+.inputgroup .error{
+    color: red;
+    font-size: 16px;
+    margin-top: -5px;
+}
+.inputgroup.success input{
+    border-color: green;
+    
+}
+.inputgroup.error input{
+    border-color: RED;
+}
